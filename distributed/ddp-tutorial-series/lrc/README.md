@@ -9,29 +9,29 @@ Code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_s
 * [run_gpuA40_node.sh](run_gpuA40_node.sh): Set up slurm environment variables, and submit slurm job
 
 ## Run DDP on multiple nodes & GPUs on [Lawrencium Cluster](https://it.lbl.gov/service/scienceit/high-performance-computing/)
-* ### Request an [Interactive Jupyter Server](https://it.lbl.gov/resource/hpc/for-users/hpc-documentation/open-ondemand/jupyter-server/) on ES1 GPU partition from [Lawrencium Open OnDemand](https://lrc-ondemand.lbl.gov)
- * Connect to Jupyter and open a terminal
+### Request an [Interactive Jupyter Server](https://it.lbl.gov/resource/hpc/for-users/hpc-documentation/open-ondemand/jupyter-server/) on ES1 GPU partition from [Lawrencium Open OnDemand](https://lrc-ondemand.lbl.gov)
+* Connect to Jupyter and open a terminal
 
-* ### Create conda environment
+### Create conda environment
 ```
 conda create -n multi-node-gpu python=3.8
 conda activate multi-node-gpu
 ```
 
-* ### Add conda environment as a Jupyter kernel (optional)
+### Add conda environment as a Jupyter kernel (optional)
 ```
 conda install ipykernel
 python -m ipykernel install --user --name multi-node-gpu --display-name "multi-node-gpu"
 ```
 
-* ### Install packages
+### Install packages
 ```
 pip3 install -r requirements.txt
 ```
 
-* ### Run the training job on multiple nodes and multiple GPUs
- * request 2 nodes on ES1 partition, each node has 4 GPUs
- * use `torchrun` to train a model on __8 GPUs__ 
+### Run the training job on multiple nodes and multiple GPUs
+* request 2 nodes on ES1 partition, each node has 4 GPUs
+* use `torchrun` to train a model on __8 GPUs__ 
 
 Please replace `ac_XYZ` with __your Lawrencium slurm account__.
 ```
