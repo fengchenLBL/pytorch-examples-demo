@@ -35,7 +35,8 @@ pip3 install -r requirements.txt
 Please replace `ac_XYZ` with __your Lawrencium slurm account__.
 ```
 export SBATCH_ACCOUNT=ac_XYZ
-./run_gpuA40_node.sh
+
+sh ./run_gpuA40_node.sh
 ```
 
 Outputs in [./log](log):
