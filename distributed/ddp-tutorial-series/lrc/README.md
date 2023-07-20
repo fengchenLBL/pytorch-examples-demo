@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 * ### Run the training job on multiple nodes and multiple GPUs
  * request 2 nodes on ES1 partition, each node has 4 GPUs
- * use `torchrun` to train a model on 8 GPUs 
+ * use `torchrun` to train a model on __8 GPUs__ 
 
 Please replace `ac_XYZ` with __your Lawrencium slurm account__.
 ```
