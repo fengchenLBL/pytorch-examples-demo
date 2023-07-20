@@ -6,6 +6,7 @@ Code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_s
 ## Files
 * [multi_node_gpu.py](multi_node_gpu.py): DDP on multiple nodes and multiple GPUs using Torchrun
 * [lrc_slurm_run.sbatch](lrc_slurm_run.sbatch): Lawrencium cluster slurm script to launch a training job on 2 nodes, each node has 4 of GPUs(NVidia A40)
+* [run_gpuA40_node.sh](run_gpuA40_node.sh): Set up slurm environment variables, and submit slurm job
 
 ## Run DDP on multiple nodes & GPUs on [Lawrencium Cluster](https://it.lbl.gov/service/scienceit/high-performance-computing/)
 ### Request an [Interactive Jupyter Server](https://it.lbl.gov/resource/hpc/for-users/hpc-documentation/open-ondemand/jupyter-server/) on ES1 GPU partition from [Lawrencium Open OnDemand](https://lrc-ondemand.lbl.gov)
