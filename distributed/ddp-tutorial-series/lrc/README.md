@@ -35,7 +35,7 @@ export SBATCH_ACCOUNT=ac_XYZ
 ./run_gpuA40_node.sh
 ```
 
-Outputs in [log](log):
+Outputs in [./log](log):
 * training data size: 2048
 * epochs: 50
 * save the model every 10 epochs as `snapshot.pt` 
