@@ -8,6 +8,9 @@ Code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_s
 * [lrc_slurm_run.sbatch](lrc_slurm_run.sbatch): Lawrencium cluster slurm script to launch a training job on 2 nodes, each node has 4 of GPUs(NVidia A40)
 
 ## Run on [Lawrencium Cluster](https://it.lbl.gov/service/scienceit/high-performance-computing/)
+### Request an [Interactive Jupyter Server](https://it.lbl.gov/resource/hpc/for-users/hpc-documentation/open-ondemand/jupyter-server/) on ES1 GPU partition from [Lawrencium Open OnDemand](https://lrc-ondemand.lbl.gov)
+* Connect to Jupyter and open a terminal
+
 * ### Create conda environment
 ```
 conda create -n multi-node-gpu python=3.8
